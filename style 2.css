@@ -1,0 +1,107 @@
+#titolo {
+position: absolute;
+  top: 15px;
+  left:120px;
+  font-size: 30px;
+  font-family: Raleway, Georgia, sans-serif;
+  color:black;
+}
+#sfondo00{
+  width: 1400px;
+ height: 400px;
+background-color: #D3D3D3;
+   position: absolute;
+   top: 200px;
+   left:10px;
+}
+#donna01{
+   position:absolute;
+   top: 250px;
+   left:50px;
+}
+
+#works {
+  font-family: Raleway, Georgia, sans-serif;
+  color:black;
+}
+#contact {
+  font-family: Raleway, Georgia, sans-serif;
+  color:black;
+}
+#about {
+  font-family: Raleway, Georgia, sans-serif;
+  color:black;
+}
+.icon {
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+}
+
+.menu {
+    width: 50px;
+    height: 6px;
+    background-color: #F00000;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s;
+}
+
+
+.menu:after, .menu:before {
+   content: '';
+   position: absolute;
+   width: 50px;
+   height: 6px;
+   background-color: #000000;
+   transition: .5s;
+}
+
+.menu:after {
+    top: 15px;
+}
+
+.menu:before {
+    top: -15px;
+}
+
+.lista {
+    height: 0px;
+    overflow: hidden;
+    list-style: none;
+    margin-top: 0;
+    position: relative;
+    left: -20px;
+}
+
+.lista li{
+    background-color: #000000;
+    color: #fff;
+    padding: 20px 20px;
+    width: 335px;
+}
+
+.lista li:hover{
+    background-color: #8e8e8e;
+}
+
+.icon.active .menu {
+    background-color: rgba(0,0,0,0);
+}
+
+.lista.active {
+     height: auto;
+    overflow: auto;
+}
+
+.icon.active .menu:after {
+    transform: rotate(-45deg);
+    top: 0px;
+}
+
+.icon.active .menu:before {
+    transform: rotate(45deg);
+    top: 0px;
+}

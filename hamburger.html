@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="asset/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="asset/css/slider.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script   src="asset/js/bootstrap.js"></script>
+
+    <!--script   src="https://code.jquery.com/jquery-3.3.1.js"></script-->
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('.icon').click(function(){
+          $('.icon').toggleClass('active');
+          $('.lista').toggleClass('active');
+        })
+    })
+    </script>
+    <title>Anghileri Maria</title>
+    <style>
+
+    </style>
+</head>
+<body>
+  <!--HEADER e MENU-->
+  <div class="container-fluid">
+  <div style="position: relative" class="row">
+      <div class="icon">
+          <div class="menu">
+          </div>
+      </div>
+      <ul class="lista">
+          <li class="vocemenuli_1"><a href="#home">Home</a></li>
+          <li class="vocemenuli_2"><a href="#works">Works</a></li>
+          <li class="vocemenuli_3"><a href="#about">About</a></li>
+          <li class="vocemenuli_4"><a href="#contact">Contact</a></li>
+      </ul>
+        <h1 id="titolo">ANGHILERI MARIA</h1>
+    </div>
+   </div>
+    <!-- fine HEADER e MENU-->
+    <!-- CORPO PAGINA-->
+  <div class="container-fluid">
+    <div class="row">
+      <h2 id="works" style="background-color:black;">WORKS</h2>
+    </div>
+    <div class="row macchia">
+      <div class="col-md-12">
+        <h3 class="titoletti">Illustration</h3>
+      </div>
+        <div id="slideshow">
+            <div>
+                <img style="width:100%"  src="illustrazioni/a.png">
+            </div>
+            <div>
+                <img style="width:100%"   src="illustrazioni/b.png">
+            </div>
+            <div>
+                <img style="width:100%"  src="illustrazioni/c.png">
+            </div>
+            <div>
+                <img style="width:100%"  src="illustrazioni/d.png">
+            </div>
+            <div>
+                <img style="width:100%"  src="illustrazioni/e.png">
+            </div>
+            <div>
+                <img style="width:100%"  src="illustrazioni/i.jpg">
+            </div>
+            <div>
+                <img style="width:100%"  src="illustrazioni/f.png">
+            </div>
+        </div>
+    </div>
+    <div class="row macchia2">
+        <div class="col-md-12">
+            <h3 class="titoletti">Sketches</h3>
+        </div>
+        <div class="col-sm-4">
+            <img class="center-block borderImg" style="width:50%"  src="illustrazioni/3.jpg">
+        </div>
+        <div class="col-sm-4">
+            <img class="center-block borderImg" style="width:50%"  src="illustrazioni/1.jpg">
+        </div>
+        <div  class="col-sm-4">
+        <img class="center-block borderImg" style="width:50%"  src="illustrazioni/2.jpg">
+        </div>
+    </div>
+    <div class="row macchia3">
+      <div class="col-md-12">
+        <h3 class="titoletti">Spinner</h3>
+      </div>
+        <div  class="col-md-2 AltezzaMinima margineMin"></div>
+       <div class="col-md-4 AltezzaMinima margineMin">
+         <div id="spinner"></div>
+         <div id="cspinner"></div>
+       </div>
+       <div style= "position:relative" class="col-md-4 AltezzaMinima margineMin">
+         <div id="spinner1"></div>
+         <div id="spinner2"></div>
+         <div id="spinner3"></div>
+       </div>
+        <div class="col-md-2 AltezzaMinima margineMin"></div>
+    </div>
+  </div>
+  <div class="container-fluid">
+      <div class="row">
+          <h2 id="about" style="background-color:black;">About</h2>
+      </div>
+      <div class="col-md-6">
+          <img class="center-block" style="width:45%"  src="io.png">
+      </div>
+      <div class="col-md-6">
+          <h3 class="titoletti">Anghileri Maria</h3>
+          <h4>Bergamo, Italia.</h4>
+          <p id=descrizione>
+              Ho studiato le discipline pittoriche al Liceo artistico di Bergamo.<br>
+              Ho deciso poi di proseguire gli studi, iscrivendomi alla facoltà di Design della Comunicazione, presso il Politecnico di Milano.<br> Questa scelta è stata motivata dal fatto di voler acquisire delle basi solide per sviluppare le mie idee creative.
+              Adoro "creare", qualunque tipo di cosa, da un orecchino a un'illustrazione vettoriale.<br>
+              In questa pagina troverete piccoli lavori personali, principalmente disegni realizzati con la tavoletta grafica.
+          </p></p>
+      </div>
+  </div>
+  <div class="container-fluid">
+      <div class="row">
+          <h2 id="contact" style="background-color:black;">Contact</h2>
+          <p id=mail> maria.anghileri@mail.polimi.it e/o mariaa-97@gmail.com</p>
+      </div>
+  </div>
+<script type="text/javascript">
+    $("#slideshow > div:gt(0)").hide();
+
+    setInterval(function() {
+        $('#slideshow > div:first')
+            .fadeOut(1000)
+            .next()
+            .fadeIn(1000)
+            .end()
+            .appendTo('#slideshow');
+    }, 1000);
+</script>
+</body>
+</html>

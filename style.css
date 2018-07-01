@@ -1,0 +1,221 @@
+
+#titolo {
+position: absolute;
+  top: 1px;
+  left:160px;
+  font-size: 30px;
+  font-family: Raleway, Georgia, sans-serif;
+  color:black;
+  font-weight: bolder;
+}
+.titoletto {
+  font-family: Raleway, Georgia, sans-serif;
+}
+#mail{
+    font-family: Raleway, Georgia, sans-serif;
+}
+#descrizione{
+    font-family: Raleway, Georgia, sans-serif;
+}
+
+#works {
+  font-family: Raleway, Georgia, sans-serif;
+  color:#FFA07A;
+
+}
+#contact {
+  font-family: Raleway, Georgia, sans-serif;
+  color:#FFA07A;
+}
+#about {
+  font-family: Raleway, Georgia, sans-serif;
+  color:#FFA07A;
+}
+.icon {
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+}
+
+.menu {
+    width: 50px;
+    height: 6px;
+    background-color:#FFA07A ;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s;
+}
+
+
+.menu:after, .menu:before {
+   content: '';
+   position: absolute;
+   width: 50px;
+   height: 6px;
+   background-color: #000000;
+   transition: .5s;
+}
+
+.menu:after {
+    top: 15px;
+}
+
+.menu:before {
+    top: -15px;
+}
+
+.lista {
+    height: 0px;
+    overflow: hidden;
+    list-style: none;
+    margin-top: 0;
+    position: relative;
+    left: -20px;
+}
+
+.lista li{
+    background-color: #000000;
+    color: #fff;
+    padding: 20px 20px;
+    width: 335px;
+}
+
+.lista li:hover{
+    background-color: #8e8e8e;
+}
+
+.icon.active .menu {
+    background-color: rgba(0,0,0,0);
+}
+
+.lista.active {
+     height: auto;
+    overflow: auto;
+}
+
+.icon.active .menu:after {
+    transform: rotate(-45deg);
+    top: 0px;
+}
+
+.icon.active .menu:before {
+    transform: rotate(45deg);
+    top: 0px;
+}
+a:link {
+     color:white;
+     background-color: transparent;
+     text-decoration: none;
+     font-family: Raleway, Georgia, sans-serif;
+}
+a:visited {
+     color:white;
+     background-color: transparent;
+     text-decoration: none;
+     font-family: Raleway, Georgia, sans-serif;
+}
+a:hover {
+     color:#FFA07A;
+     background-color: transparent;
+     text-decoration: none;
+     font-family: Raleway, Georgia, sans-serif;
+}
+a:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    font-family: Raleway, Georgia, sans-serif;
+}
+.macchia{
+  background-image: url("baseQ.png");
+    background-size: 50% 100%;
+    background-position: 50% 17px;
+  background-repeat: no-repeat;
+}
+.macchia2{
+  background-image: url("base.png");
+  background-size: 100% 100%;
+  background-position: 0px 31px;
+  background-repeat: no-repeat;
+}
+.macchia3{
+  background-image: url("base.png");
+  background-size: 100% 100%;
+    background-position: 0px 31px;
+  background-repeat: no-repeat;
+}
+@keyframes spin{
+from{ width:0px; height:0px; }
+to{width:50px; height:50px;}
+}
+@keyframes cspin{
+from{ width:50px; height:50px; }
+to{width:0px; height:0px;}
+}
+@keyframes spin2{
+  0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+}
+#spinner {
+    opacity:0.5;
+   animation: spin 1s infinite alternate;
+   position: absolute;
+   background-color:black;
+   width: 50px;
+   height: 50px;
+   border-radius: 100%;
+ }
+ #cspinner {
+  animation: cspin 1s infinite alternate;
+  position: absolute;
+  background-color: black;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+#spinner1 {
+   display: inline-block;
+   animation: spin2 2s infinite;
+   animation-delay: -0.8s;
+   background-color: black;
+   position: relative;
+   top:0;
+   right:-50%;
+   width: 10px;
+   height: 40px;
+ }
+ #spinner2 {
+    display: inline-block;
+    animation: spin2 2s infinite;
+    animation-delay: -0.5s;
+    background-color: black;
+    position: relative;
+    top:0;
+    right:-50%;
+    width: 10px;
+    height: 40px;
+  }
+  #spinner3 {
+     display: inline-block;
+     animation: spin2 2s infinite;
+     animation-delay: -0.2s;
+     background-color: black;
+     position: relative;
+     top:0;
+     right:-50%;
+     width: 10px;
+     height: 40px;
+   }
+   .AltezzaMinima {
+      min-height: 100px;
+    }
+
+   .borderImg {
+       border: 3px solid #79665e;
+   }
+
+   .margineMin {
+       margin-top: 50px;
+   }
